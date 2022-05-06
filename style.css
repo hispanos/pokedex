@@ -109,10 +109,6 @@ main {
     font-size: 1.3em;
 }
 
-.main__information__group:nth-last-child(1) {
-    margin-bottom: 0;
-}
-
 .main__information__group__title {
     font-weight: bold;
 }
