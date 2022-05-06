@@ -17,17 +17,19 @@ document.addEventListener('DOMContentLoaded', () => {
     const weight = document.getElementById('weight')
 
     const handleOver = (element) => {
-        const pokemonId = element.getAttribute('data-id')
-        const pokemon = dataPokemons.find((pokem) => pokem.number === pokemonId)
-        title.innerHTML = pokemon.name
-        icon.className = pokemon.icon
-        image.src = `./images/${pokemon.number}.png`
-        number.innerHTML = pokemon.number
-        level.innerHTML = pokemon.level
-        type.innerHTML = pokemon.type
-        hability.innerHTML = pokemon.hability
-        height.innerHTML = pokemon.height
-        weight.innerHTML = pokemon.weight
+        if(element.hasAttribute('data-id')) {
+            const pokemonId = element.getAttribute('data-id')
+            const pokemon = dataPokemons.find((pokem) => pokem.number === pokemonId)
+            title.innerHTML = pokemon.name
+            icon.className = pokemon.icon
+            image.src = `./images/${pokemon.number}.gif`
+            number.innerHTML = pokemon.number
+            level.innerHTML = pokemon.level
+            type.innerHTML = pokemon.type
+            hability.innerHTML = pokemon.hability
+            height.innerHTML = pokemon.height
+            weight.innerHTML = pokemon.weight
+        }
     }
     
 })
