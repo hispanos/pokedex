@@ -13,7 +13,7 @@
     --danger-color: #e74c3c;
 }
 
-body {
+.body {
     width: 100vw;
     min-width: 320px;
     height: 100vh;
@@ -29,7 +29,7 @@ body {
     flex-direction: column;
 }
 
-header {
+.header {
     width: 100%;
     background-color: var(--main-color);
     height: 100px;
@@ -48,7 +48,7 @@ header {
     font-size: 1.8em;
 }
 
-main {
+.main {
     flex: 1;
     background-color: var(--dark-color);
     display: flex;
@@ -123,7 +123,7 @@ main {
 }
 
 
-footer {
+.footer {
     background-color: var(--light-color);
     height: 230px;
     border-radius: 0 0 10px 10px;
@@ -161,11 +161,11 @@ footer {
 }
 
 @media (min-width: 627px) {
-    header {
+    .header {
         justify-content: start;
     }
 
-    main {
+    .main {
         display: grid;
         grid-template-columns: 3fr 2fr;
     }
@@ -205,7 +205,7 @@ footer {
         align-items: center;
     }
 
-    footer {
+    .footer {
         height: 150px;
         flex-direction: row;
         justify-content: space-around;
