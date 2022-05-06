@@ -72,8 +72,16 @@ main {
     font-size: 2.2em;
 }
 
-.main__description__title__icon {
+.fire {
     color: var(--danger-color);
+}
+
+.grass {
+    color: #27ae60;
+}
+
+.poison {
+    color: #8e44ad;
 }
 
 .main__description__title__name {
@@ -107,6 +115,7 @@ main {
     grid-template-columns: 1fr 1fr;
     margin-bottom: 20px;
     font-size: 1.3em;
+    text-transform: uppercase;
 }
 
 .main__information__group__title {
