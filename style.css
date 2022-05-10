@@ -13,14 +13,11 @@
     --danger-color: #e74c3c;
 }
 
-.body {
+.container {
     width: 100vw;
     min-width: 320px;
     height: 100vh;
     background-color: var(--gray-color);
-}
-
-.container {
     margin: auto;
     padding: 20px 10px 20px 10px;
     max-width: 1200px;
@@ -56,13 +53,13 @@
     padding: 15px 20px;
 }
 
-.main__description {
+.description {
     display: flex;
     flex-direction: column;
     height: 200px;
 }
 
-.main__description__title {
+.description__title {
     background-color: var(--light-color);
     height: 60px;
     display: flex;
@@ -84,12 +81,12 @@
     color: #8e44ad;
 }
 
-.main__description__title__name {
+.description__name {
     text-transform: uppercase;
     margin-left: 5px;
 }
 
-.main__description__image {
+.description__image {
     max-height: 200px;
     object-fit: contain;
     position: absolute;
@@ -100,7 +97,7 @@
     transition-duration: 1s;
 }
 
-.main__information {
+.information {
     background-color: var(--light-color);
     border-radius: 8px;
     padding: 20px;
@@ -110,7 +107,7 @@
     padding-top: 50px;
 }
 
-.main__information__group {
+.information__group {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-bottom: 20px;
@@ -118,7 +115,7 @@
     text-transform: uppercase;
 }
 
-.main__information__group__title {
+.information__title {
     font-weight: bold;
 }
 
@@ -156,7 +153,7 @@
     background-color: var(--dark-color);
 }
 
-.footer__group__individual__image {
+.footer__group__image {
     height: 100%;
 }
 
@@ -170,35 +167,35 @@
         grid-template-columns: 3fr 2fr;
     }
 
-    .main__description {
+    .description {
         margin-right: 20px;
         height: calc(100vh - 320px);
     }
 
-    .main__description__title {
+    .description__title {
         margin-left: 60px;
     }
 
-    .main__description__container {
+    .description__container {
         display: flex;
         height: 100%;
         align-items: center;
     }
 
-    .main__description__image {
+    .description__image {
         max-height: 100%;
         max-width: 100%;
         position: relative;
         top: 0;
     }
 
-    .main__information {
+    .information {
         display: grid;
         grid-template-columns: 1fr 1fr;
         margin-right: 50px;
     }
 
-    .main__information__group {
+    .information__group {
         display: flex;
         flex-direction: column;
         justify-content: center;
