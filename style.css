@@ -29,7 +29,7 @@
 .header {
     width: 100%;
     background-color: var(--main-color);
-    height: 100px;
+    min-height: 100px;
     border-radius: 10px 10px 0 0;
     display: flex;
     justify-content: center;
@@ -37,7 +37,7 @@
 }
 
 .header__logo{
-    width: 90px;
+    width: 50px;
 }
 
 .header__title{
@@ -61,12 +61,12 @@
 
 .description__title {
     background-color: var(--light-color);
-    height: 60px;
+    min-height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 8px;
-    font-size: 2.2em;
+    font-size: 1.8em;
 }
 
 .fire {
@@ -87,13 +87,13 @@
 }
 
 .description__image {
-    max-height: 200px;
+    max-height: 150px;
     object-fit: contain;
     position: absolute;
     left: 0;
     right: 0;
     margin: auto;
-    top: 200px;
+    top: 220px;
     transition-duration: 1s;
 }
 
@@ -111,7 +111,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-bottom: 20px;
-    font-size: 1.3em;
+    font-size: 1.1em;
     text-transform: uppercase;
 }
 
@@ -122,7 +122,7 @@
 
 .footer {
     background-color: var(--light-color);
-    height: 230px;
+    min-height: 280px;
     border-radius: 0 0 10px 10px;
     display: flex;
     flex-direction: column;
@@ -143,8 +143,8 @@
 }
 
 .footer__group__individual {
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
     background-color: var(--gray-color);
     border-radius: 8px;
 }
@@ -160,6 +160,7 @@
 @media (min-width: 627px) {
     .header {
         justify-content: start;
+        padding-left: 20px;
     }
 
     .main {
@@ -202,22 +203,29 @@
         align-items: center;
     }
 
+    .information__title {
+        font-weight: 100;
+    }
+
+    .information__description {
+        font-weight: bold;
+    }
+
     .footer {
-        height: 150px;
+        min-height: 150px;
         flex-direction: row;
         justify-content: space-around;
+        padding: 0 80px;
     }
 
     .footer__title {
         flex-grow: 2;
-        text-align: center;
     }
 
     .footer__group {
         display: flex;
         flex-grow: 3;
-        justify-content: space-around;
-        margin-right: 50px;
+        justify-content: space-between;
     }
 
 }
